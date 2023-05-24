@@ -50,8 +50,8 @@ div#letter {
 }
 
 @media (cursor: pointer) {
-  #container { display: none; }
-  #videoElement { display: none; } 
+  #container { display: none !important; }
+  #videoElement { display: none !important; } 
   #som {display: block;}
 }
 
@@ -64,7 +64,6 @@ div#letter {
 <div id="container">
 	<video autoplay="true" id="videoElement">
 	</video>
-  
 </div>
 <div id="som">
   <p>Only desktop version supports camera.</p>
