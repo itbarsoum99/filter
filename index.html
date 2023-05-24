@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>filter</title>
+  <meta charset="utf-8" />
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap');
+
+::selection {
+  background-color: transparent;
+ }
+#container {
+	margin: 0px auto;
+	width: 500px;
+	height: 375px;
+	border: 10px #333 solid;
+  margin-top: 50vh;
+  transform: translate(0, -50%);
+
+}
+#videoElement {
+	width: 500px;
+	height: 375px;
+	background-color: #666;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+div#letter {
+  position:absolute;
+  transform: translate(-50%, -50%);
+  height: 35px;
+  width: 35px;
+  font-size: 10em;
+  font-family: 'Rubik Spray Paint', cursive;
+  color: purple;
+
+}
+.fun {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -ms-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3 ease-out;
+}
+.fun.fade {
+  opacity:0;
+}
+
+
+} 
+</style>
+</head>
+ 
+<body onmousedown="generateRandomLetter()">
+<div id="container">
+	<video autoplay="true" id="videoElement">
+	</video>
+</div>
+
+<div id="letter" class="fun"></div>
+  <script src="main.js"></script>
+</body>
+</html>
