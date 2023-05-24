@@ -4,24 +4,21 @@
   <title>filter</title>
   <meta charset="utf-8" />
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap');
 
 ::selection {
   background-color: transparent;
  }
 #container {
 	margin: 0px auto;
-	width: 500px;
-	height: 375px;
-	border: 10px #333 solid;
+	width: 50vw;
   margin-top: 50vh;
   transform: translate(0, -50%);
 
 }
 #videoElement {
-	width: 500px;
-	height: 375px;
+	width: 50vw;
 	background-color: #666;
+  border: 10px solid #666;
 }
 
 body {
@@ -35,7 +32,8 @@ div#letter {
   height: 35px;
   width: 35px;
   font-size: 10em;
-  font-family: 'Rubik Spray Paint', cursive;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
   color: purple;
 
 }
@@ -49,6 +47,11 @@ div#letter {
 }
 .fun.fade {
   opacity:0;
+}
+
+@media (cursor: pointer) {
+  #container { width: 80vw; }
+  #videoElement { width: 80vw; } 
 }
 
 

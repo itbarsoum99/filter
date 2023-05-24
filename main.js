@@ -30,7 +30,7 @@ function generateRandomLetter() {
 
   setTimeout(function() {
     letter.classList.add('fade');
-  }, 300);
+  }, 400);
   
 }
 
