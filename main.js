@@ -21,7 +21,7 @@ document.addEventListener('mousemove', onMouseMove);
 
 function generateRandomLetter() {
   letter.classList.remove('fade');
-  const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const alphabet = "AAABBBCCCDDDEEEFFFGGGHHHIIIJKKLLLMMMNNNOOOPPPQRRRSSSTTTUVWXYZ"
   const randomCharacter = alphabet[Math.floor(Math.random() * alphabet.length)];
   letter.innerHTML = randomCharacter;
   const colors = ["purple", "blue", "green", "red", "orange"];
